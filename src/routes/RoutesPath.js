@@ -1,16 +1,15 @@
 import React from "react";
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
-import Layout from "../layouts/Layout"
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+// import Layout from "../layouts/Layout"
 import Accueil from "../pages/Accueil/Accueil";
-import Fiche from '../pages/Fiche-logement/Fiche';
-import APropos from "../pages/A-propos/APropos";
+import Fiche from '../pages/Fiche-logement/Fiche-logement';
+import APropos from "../pages/A-propos/Apropos";
 import Erreur404 from "../pages/404/404";
 
 
 function RoutesPath() {
     return(
-        <HashRouter>
-            <Layout>
+        <Router>
                 <Routes>
                     <Route element={<Navigate replace to="/accueil" />} path="/" />
                     <Route path="/accueil" element={<Accueil />}/>
@@ -18,8 +17,7 @@ function RoutesPath() {
                     <Route path="/a-propos" element={<APropos />}/>
                     <Route path="*" element={<Erreur404 />}/>
                 </Routes>
-            </Layout>
-        </HashRouter>
+        </Router>
     );
 }
 
