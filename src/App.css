@@ -1,3 +1,28 @@
+
+/* Base */
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+} */
+
+/* Polices */
+/* * {
+  font-family: "Montserrat";
+} */
+
+/* Contenu */
+/* .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+
+
+
+
+
 .App {
   text-align: center;
 }

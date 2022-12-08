@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container {
+    bottom: 0;
+    width: 1440px;
+    background: black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    /* position: absolute; */
+    left: 45.76%;
+    right: 45.76%;
+    top: 31.58%;
+    bottom: 49.55%;
+}
+
+.text-footer {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+@media (min-width: 375px) {
+    .text-footer {
+    font-size: 16px;
+    }
+}
