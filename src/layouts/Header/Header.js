@@ -13,7 +13,7 @@ class Navigation extends React.Component {
           <img src={Logo} alt="Logo Kasa" className="nav_logo"></img>
         </Link>
         <div className="nav_main">
-          <Link to="/" className="nav_link">
+          <Link to="/" className="nav_link nav_home">
             Accueil
           </Link>
           <Link to="/a-propos" className="nav_link">
@@ -29,27 +29,41 @@ export default Navigation;
 
 
 
-// import React from "react";
-// import { NavLink } from "react-router-dom";
+// class Header extends React.Component {
+//   render() {
+//     return (
+//       <header>
+//         <Link to="/">
+//           <img className="header-logo" src={logo} alt="Kasa" />
+//         </Link>
 
-// import Logo from "../assets/images/headerLogo.svg";
+//         <nav className="main-nav">
+//           <ul>
+//             <li>
+//               <NavLink
+//                 className="header-link"
+//                 activeClassName="active-link"
+//                 exact
+//                 to="/"
+//               >
+//                 Accueil
+//               </NavLink>
+//             </li>
 
-// const Navigation = () => {
-//   return (
-//     <nav className="header">
-//       <NavLink to="/">
-//         <img src={Logo} alt="Logo" className="header_img" />
-//       </NavLink>
-//       <div className="header_links">
-//         <NavLink to="/" className="header_links_style">
-//           Accueil
-//         </NavLink>
-//         <NavLink to="/about" className="header_links_style">
-//           About
-//         </NavLink>
-//       </div>
-//     </nav>
-//   );
-// };
+//             <li>
+//               <NavLink
+//                 className="header-link"
+//                 activeClassName="active-link"
+//                 to="/a-propos"
+//               >
+//                 &Agrave; propos
+//               </NavLink>
+//             </li>
+//           </ul>
+//         </nav>
+//       </header>
+//     );
+//   }
+// }
 
-// export default Navigation;
+// export default Header;
