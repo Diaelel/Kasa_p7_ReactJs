@@ -1,0 +1,44 @@
+/* Color variables */
+
+/* $primary: #ff6060;
+$secondary: #f7f7f7; */
+
+/* Screen size variables */
+
+/* $smalldevices: 576px;
+$mediumdevices: 768px;
+$largedevices: 992px;
+$xlargedevices: 1200px; */
+
+.accueil {
+	padding: 10px;
+}
+
+.rental_section {
+		display: grid;
+		gap: 10px;
+		margin-top: 22px;
+	}
+
+
+@media screen and (min-width: 768px) {
+	.homepage {
+		max-width: 1080px;
+		margin: auto;
+	}
+
+	.rental_section {
+		background: #f7f7f7;
+		border-radius: 10px;
+		gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.rental_section {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px;
+	}
+}

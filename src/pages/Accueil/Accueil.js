@@ -1,29 +1,65 @@
-import React from "react";
 import "./Accueil.css";
-import Banniere from "../../components/Banniere/Banniere";
-import banniereAccueil from "../../assets/images/Banniere.jpg";
-import { NavLink } from "react-router-dom";
+import { Component } from "react";
+import getData from "../../Utils/getData";
+import Banner from "../../components/Banner/Banner";
+import RentalCard from "../../components/RentalCard/RentalCard";
 
-import Header from "../../layouts/Header/Header";
-import Footer from "../../layouts/Footer/Footer";
 
-import FicheLogement from "../../data/logements.json";
 
-function Accueil() {
-    return(
-        <div className="Accueil">
-            <Header />
+export default class Accueil extends Component {
+	state = {
+		rentalList: [],
+	};
 
-            <Banniere image={banniereAccueil} texte="Chez vous, partout et ailleurs"/>
-            <div className="liste-logements">
+	componentDidMount() {
+		this.setState({ rentalList: [...getData()] });
+	}
 
-            </div>
-            <Footer />
-        </div>
-    );
+	render() {
+		return (
+            <main className="accueil">
+				<Banner origin="accueil"></Banner>
+				<section className="rental_section">
+					{this.state.rentalList.map((item, index) => {
+						return (
+							<RentalCard title={item.title} cover={item.cover} key={index} id={item.id}></RentalCard>
+						);
+					})}
+				</section>
+			</main>
+		);
+	}
 }
 
-export default Accueil;
+
+// import React from "react";
+// import "./Accueil.css";
+// import Banner from "../../components/Banner/Banner";
+// import bannerAccueil from "../../assets/images/Banner.jpg";
+// import { NavLink } from "react-router-dom";
+
+// import Header from "../../layouts/Header/Header";
+// import Footer from "../../layouts/Footer/Footer";
+
+// import FicheLogement from "../../data/logements.json";
+
+// function Accueil() {
+//     return(
+//         < main className="Accueil">
+//             <Header />
+//             <Banner image={bannerAccueil} texte="Chez vous, partout et ailleurs"/>
+
+            
+//             <Footer />
+//         </main>
+//     );
+// }
+
+// export default Accueil;
+
+
+
+
 
 // import React from "react";
 // // import "./Accueil.css";

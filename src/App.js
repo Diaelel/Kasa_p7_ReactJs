@@ -3,7 +3,7 @@ import './App.css';
 import RoutesPath from "../src/routes/RoutesPath";
 
 function App() {
-  return <RoutesPath />;
-}
+    return <RoutesPath/>;
+    }
 
 export default App;

@@ -1,0 +1,28 @@
+
+.rentalcard {
+	border-radius: 10px;
+	height: 255px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.rentalcard_title {
+		bottom: 25px;
+		font-size: 18px;
+		font-weight: 500;
+		left: 19.71px;
+		position: absolute;
+		color: white;
+	}
+.rentalcard_img {
+		height: 100%;
+		object-fit: cover;
+        width: -webkit-fill-available;
+	}
+.rentalcard_overlay {
+		-moz-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
+		-webkit-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
+		box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
+		inset: 0;
+		position: absolute;
+	}

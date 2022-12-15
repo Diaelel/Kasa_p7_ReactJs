@@ -1,0 +1,41 @@
+.error {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 80vh;
+	text-align: center;
+}
+
+.error_title {
+	color: #ff6060;
+	font-size: 96px;
+	font-weight: 700;
+}
+
+.error_description {
+	color: #ff6060;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 11px;
+	padding: 0 58px;
+}
+
+.error_btn {
+	background: transparent;
+	border: none;
+	color: #ff6060;
+	font-size: 14px;
+	margin-top: 133px;
+	text-decoration: underline;
+}
+
+
+@media screen and (min-width: 992px) {
+    .error_title {
+        font-size: 288px;
+	}
+	.error_description {
+		font-size: 36px;
+	}
+}

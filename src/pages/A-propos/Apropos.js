@@ -1,15 +1,22 @@
-import React from "react";
+import "./Apropos.css";
+import { Component } from "react";
+import Collapse from "../../components/Collapse/collapse";
+import values from "../../data/values.json";
+import Banner from "../../components/Banner/Banner";
 
-import Header from "../../layouts/Header/Header";
-import Footer from "../../layouts/Footer/Footer";
-
-
-function Apropos () {
-    return (
-        <div>
-
-        </div>
-    )
+export default class Apropos extends Component {
+	render() {
+		return (
+			<div className="apropos">
+				<Banner origin="apropos"></Banner>
+				<section className="apropos_values">
+					{values.map((value) => {
+						return (
+							<Collapse title={value.title} key={value.id} content={value.description} />
+						);
+					})}
+				</section>
+			</div>
+		);
+	}
 }
-
-export default Apropos;

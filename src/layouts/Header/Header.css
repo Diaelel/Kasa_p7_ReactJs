@@ -5,6 +5,76 @@
 }
 
 .nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 40px 100px 63px 100px;
+  max-width: 1240px;
+  height: 68px;
+}
+
+.nav_logo {
+  width: 210.32px;
+  height: 68px;
+	}
+
+.nav_main, .nav_link {
+	color:  #ff6060;
+	font-size: 24px;
+	text-decoration: none;
+  font-weight: 500;
+}
+
+.nav_link {
+	text-decoration: underline;
+}
+
+
+.nav_home {
+  margin-right: 57px;
+}
+
+@media screen and (max-width: 375px) {
+  .nav {
+    max-width: 335px;
+    height: 47px;
+    margin: 20px 20px 16px 20px;
+  }
+  
+  .nav_logo {
+		width: 145px;
+    height: 47px;
+	}
+
+  .nav_link {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+  .nav_home {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+	/* .nav {
+		max-width: 1240px;
+  } */
+
+	.nav_main {
+				text-transform: capitalize;
+				font-size: 16px;
+			}
+		}
+	
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
   margin: 40px 100px; 
@@ -25,7 +95,12 @@
 
 .nav_home {
   margin-right: 57px;
-}
+} */
+
+
+
+
+
 
 /* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
 body {

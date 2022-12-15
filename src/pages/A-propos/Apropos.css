@@ -1,0 +1,22 @@
+.apropos {
+    margin: 10px;
+	min-height: 90vh;
+}
+
+.apropos_values {
+	display: grid;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .apropos {
+        padding: 10px;
+		max-width: 1080px;
+		margin: auto;
+    }	
+    .apropos_values {
+		max-width: 900px;
+        margin: 30px auto;
+    }
+}

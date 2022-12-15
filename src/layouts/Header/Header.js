@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Header.css";
-
 import Logo from "../../assets/images/logoHeader.svg";
 
 class Navigation extends React.Component {
@@ -16,7 +15,7 @@ class Navigation extends React.Component {
           <Link to="/" className="nav_link nav_home">
             Accueil
           </Link>
-          <Link to="/a-propos" className="nav_link">
+          <Link to="/a-propos" className="nav_link nav_about">
             A Propos
           </Link>
         </div>

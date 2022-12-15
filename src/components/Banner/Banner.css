@@ -1,0 +1,39 @@
+.banner,
+.banner_about {
+	background-position: center;
+	background-size: cover;
+	border-collapse: separate;
+	border-radius: 10px;
+	display: flex;
+	height: 111px;
+	align-items: center;
+}
+
+.banner_title {
+    /* -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
+	/* animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 16px;
+}
+
+.banner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Banner_1.png");
+}
+
+.banner_about {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Banner_2.png");
+}
+
+@media screen and (min-width: 768px) {
+    .banner,
+	.banner_about {
+        height: 223px;
+		justify-content: center;
+    }
+    .banner_title {
+        font-size: 48px;
+    }
+	
+}
