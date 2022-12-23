@@ -1,6 +1,6 @@
 import "./Apropos.css";
 import { Component } from "react";
-import Collapse from "../../components/Collapse/collapse";
+import Collapse from "../../components/Collapse/Collapse";
 import values from "../../data/values.json";
 import Banner from "../../components/Banner/Banner";
 

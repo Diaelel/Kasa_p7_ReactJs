@@ -19,7 +19,7 @@
 		object-fit: cover;
         width: -webkit-fill-available;
 	}
-.rentalcard_overlay {
+.rentalcard_cover {
 		-moz-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
 		-webkit-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
 		box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;

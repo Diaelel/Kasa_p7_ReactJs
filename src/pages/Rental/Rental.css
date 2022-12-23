@@ -1,0 +1,42 @@
+
+.rental {
+ margin: 10px;
+ min-height: 90vh;
+}
+.rental_informations {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ }
+ .rental_host {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+ }
+ .rental_details {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+ }
+
+
+@media screen and (min-width: 768px) {
+    .rental {
+        max-width: 1080px;
+        margin:auto;
+        padding: 10px;
+    }
+    .rental_host {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .rental_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .rental_details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

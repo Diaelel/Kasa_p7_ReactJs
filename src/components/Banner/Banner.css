@@ -10,10 +10,8 @@
 }
 
 .banner_title {
-    /* -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
-	/* animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
 	color: white;
-	font-size: 24px;
+	font-size: 48px;
 	font-weight: 500;
 	padding: 16px;
 }
@@ -26,14 +24,35 @@
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Banner_2.png");
 }
 
-@media screen and (min-width: 768px) {
-    .banner,
+
+@media screen and (max-width: 768px) {
+	.banner_title {
+		font-size: 28px;
+    	display: flex;
+    	justify-content: center;
+		margin: auto;
+	}
+}	
+
+@media screen and (min-width: 769px) {
+	.banner,
 	.banner_about {
-        height: 223px;
+		height: 223px;
 		justify-content: center;
+	}
+	.banner_title {
+		font-size: 40px;
+	}	
+}
+
+@media screen and (max-width: 375px) {
+	.banner_title {
+        font-size: 24px;
     }
-    .banner_title {
-        font-size: 48px;
-    }
-	
+}
+
+@media screen and (min-width: 993px) {
+	.banner_title {
+	  font-size: 48px;
+	}
 }

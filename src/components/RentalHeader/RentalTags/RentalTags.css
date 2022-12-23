@@ -1,0 +1,32 @@
+
+.tags {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.tag {
+	align-items: center;
+	background: #ff6060;
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	font-size: 10px;
+	font-weight: 500;
+	height: 18px;
+	justify-content: center;
+	min-width: 84px;
+	padding: 0 5px;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.tag {
+		border-radius: 15px;
+		font-size: 14px;
+		margin-top:20px;
+		min-width: 115px;
+		padding: 8px 15px;
+	}
+}

@@ -1,27 +1,19 @@
-/* Color variables */
 
-/* $primary: #ff6060;
-$secondary: #f7f7f7; */
-
-/* Screen size variables */
-
-/* $smalldevices: 576px;
-$mediumdevices: 768px;
-$largedevices: 992px;
-$xlargedevices: 1200px; */
-
-.accueil {
-	padding: 10px;
-}
+/* .accueil {
+	padding: 0 100px;
+} */
 
 .rental_section {
 		display: grid;
 		gap: 10px;
-		margin-top: 22px;
+		margin-top: 43px;
 	}
 
 
 @media screen and (min-width: 768px) {
+	.accueil {
+		padding: 0 100px;
+	}
 	.homepage {
 		max-width: 1080px;
 		margin: auto;

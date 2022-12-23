@@ -1,0 +1,28 @@
+
+.title {
+	color: #ff6060;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25.67px;
+	text-align: left;
+}
+
+.location {
+	color: #ff6060;
+	text-align: left;
+	font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+	.title {
+		font-size: 36px;
+		line-height: 51.34px;
+		max-width: 70%;
+	}
+
+	.location {
+		font-size: 18px;
+	}
+	
+}
