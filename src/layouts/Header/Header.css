@@ -16,7 +16,6 @@
 	color:  #ff6060;
   text-decoration: none;
   white-space: nowrap;
-  text-transform: uppercase;
   font-weight: 500;
 }
 
@@ -24,7 +23,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .nav {
     margin: 20px 20px 16px 20px;
   }
@@ -35,10 +34,12 @@
   .nav_main a {
     font-size: 12px;
     margin-left: 10px;
+    text-transform: uppercase;
+
   }
 }  
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
   .nav {
     margin: 25px 30px 35px 30px;
   }

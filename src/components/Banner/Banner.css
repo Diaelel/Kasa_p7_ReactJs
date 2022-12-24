@@ -14,6 +14,7 @@
 	color: white;
 	font-size: 48px;
 	font-weight: 500;
+    line-height: 100%;
 }
 
 .banner {
@@ -27,27 +28,32 @@
 @media screen and (max-width: 376px) {
 	.banner {
 		margin: 0 20px 0 20px;
+		border-radius: 10px;
 	}
 	.banner_title {
         font-size: 24px;
+		margin-left: 16px;
     }
+}
+
+@media screen and (min-width: 377px) {
+	.banner_title {
+		font-size: 26px;
+		margin-left: 16px;
+	}
 }
 
 @media screen and (min-width: 577px) {
 	.banner {
 		height: 140px;
 	}
-}
-
-@media screen and (max-width: 768px) {
 	.banner_title {
 		font-size: 28px;
-    	display: flex;
-    	justify-content: center;
+		display: flex;
+		justify-content: center;
 		margin: auto;
 	}
-}	
-
+}
 
 @media screen and (min-width: 769px) {
 	.banner,

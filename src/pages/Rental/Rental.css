@@ -1,31 +1,40 @@
-
-.rental {
- margin: 10px;
- min-height: 90vh;
-}
 .rental_informations {
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 5px;
  }
  .rental_host {
-  margin-top: 10px;
+  margin-top: -6px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
  }
  .rental_details {
-  display: grid;
-  gap: 10px;
-  margin-top: 16px;
+  gap: 76px;
+  margin-top: 24px;
  }
 
+ @media screen and (max-width: 376px) {
+    .rental {
+        margin: 0 20px;
+        min-height: 100vh;
+    }
+    .rental_wrapper {
+        margin-top: -20px;
+    }
+    .rental_host {
+        margin-top: 16px;
+        justify-content: space-between
+    }
+    .rental_details {
+        margin-top: 16.5px;
+    }
+ }
 
 @media screen and (min-width: 768px) {
     .rental {
-        max-width: 1080px;
+        max-width: 1240px;
         margin:auto;
-        padding: 10px;
+        transform: translateY(-46px);
     }
     .rental_host {
         flex-direction: column-reverse;
@@ -34,9 +43,12 @@
     .rental_wrapper {
         display: flex;
         justify-content: space-between;
+        margin-top: 30px;
     }
     .rental_details {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-flow: row-reverse;
+        
     }
 }
 

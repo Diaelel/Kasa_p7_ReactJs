@@ -15,7 +15,7 @@ function Navigation () {
             Accueil
           </NavLink>
           <NavLink activeClassName="active_link" class="active" to="/a-propos"> 
-            À Propos
+            A Propos
           </NavLink>
         </div>
       </nav>

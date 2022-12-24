@@ -59,7 +59,7 @@ export default class Collapse extends Component {
 				</div>
 
 				<div
-					className={this.state.isOpenned ? "collapse_toggle animated" : "collapse_toggle"}
+					className={this.state.isOpenned ? "collapse_toggle animated" : "collapse_toggle" }
 					style={{ height: this.state.isOpenned ? `auto` : "0px" }}
 				>
 					<div className="collapse_toggle_content">{this.collapseContent()}</div>

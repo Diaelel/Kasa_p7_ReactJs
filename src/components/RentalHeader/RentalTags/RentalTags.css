@@ -23,10 +23,11 @@
 
 @media screen and (min-width: 768px) {
 	.tag {
-		border-radius: 15px;
+		border-radius: 10px;
 		font-size: 14px;
-		margin-top:20px;
-		min-width: 115px;
+		margin-top: 14px;
+		width: 115px;
+		height: 25px;
 		padding: 8px 15px;
 	}
 }
