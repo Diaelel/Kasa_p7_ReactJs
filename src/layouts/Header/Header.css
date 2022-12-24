@@ -18,7 +18,6 @@
   white-space: nowrap;
   text-transform: uppercase;
   font-weight: 500;
-  /* margin-left: 57px; */
 }
 
 .nav .nav_main .active {
@@ -27,8 +26,6 @@
 
 @media screen and (max-width: 375px) {
   .nav {
-    /* max-width: 335px;
-    height: 47px; */
     margin: 20px 20px 16px 20px;
   }
   .nav_logo {
@@ -41,17 +38,17 @@
   }
 }  
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   .nav {
-    margin: 30px 50px 50px 30px;
+    margin: 25px 30px 35px 30px;
   }
   .nav_logo {
-    max-width: 160px;
-    max-height: 55px;
+    max-width: 152px;
+    max-height: 50px;
   }
   .nav_main a {
-    font-size: 16px;
-    margin-left: 16px;
+    font-size: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -75,5 +72,9 @@
   }
   .nav_main a {
     margin-left: 57px;
+  }
+  .nav_logo {
+    max-width: 210.32px;
+    max-height: 68px;
   }
 }

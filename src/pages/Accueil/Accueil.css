@@ -1,36 +1,59 @@
-
-/* .accueil {
-	padding: 0 100px;
-} */
-
 .rental_section {
 		display: grid;
-		gap: 10px;
+		gap: 50px 60px;
 		margin-top: 43px;
+}
+
+
+@media screen and (max-width: 376px) {
+	.rental_section {
+		margin: 22px 19px 20px 21px;
+		gap: 20px;
 	}
+}
 
+@media screen and (min-width: 377px) {
+	.accueil {
+		padding: 0 30px;
+	}
+	.rental_section {
+		margin-top: 25px;
+	}
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+	.rental_section {
+		display: grid;
+		gap: 20px;
+	}
+}
+
+@media screen and (min-width: 769px) {
 	.accueil {
 		padding: 0 100px;
 	}
-	.homepage {
-		max-width: 1080px;
-		margin: auto;
-	}
-
 	.rental_section {
-		background: #f7f7f7;
-		border-radius: 10px;
-		gap: 20px;
+		background: #F6F6F6;
+		border-radius: 25px;
 		grid-template-columns: repeat(2, 1fr);
 		padding: 20px;
+		gap: 20px;
 	}
 }
+
 
 @media screen and (min-width: 992px) {
 	.rental_section {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 50px;
+        grid-template-columns: repeat(2, 1fr);
+		padding: 36px 30px 30px 30px;
+		gap: 30px;
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.rental_section {
+        grid-template-columns: repeat(3, 1fr);
+		padding: 56px 50px 50px 50px;
+	}
+}
+

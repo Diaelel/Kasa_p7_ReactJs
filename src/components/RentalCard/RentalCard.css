@@ -1,28 +1,41 @@
 
 .rentalcard {
 	border-radius: 10px;
-	height: 255px;
+	height: 340px;
+	width: 340px;
 	position: relative;
-	width: 100%;
 	overflow: hidden;
 }
 .rentalcard_title {
-		bottom: 25px;
-		font-size: 18px;
-		font-weight: 500;
-		left: 19.71px;
-		position: absolute;
-		color: white;
-	}
+	bottom: 25px;
+	font-size: 18px;
+	font-weight: 500;
+	left: 19.71px;
+	position: absolute;
+	color: white;
+}
 .rentalcard_img {
-		height: 100%;
-		object-fit: cover;
-        width: -webkit-fill-available;
-	}
+	height: 100%;
+	object-fit: cover;
+    width: -webkit-fill-available;
+}
 .rentalcard_cover {
-		-moz-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
-		-webkit-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
-		box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
-		inset: 0;
-		position: absolute;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+	inset: 0;
+	position: absolute;
+}
+
+@media screen and (max-width: 376px) {
+	.rentalcard {
+		width: 335px;
+		height: 255px;
 	}
+}
+
+@media screen and (max-width: 1440px) {
+	.rentalcard {
+		height: 255px;
+		width: auto;
+	}
+}
+

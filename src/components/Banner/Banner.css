@@ -3,17 +3,17 @@
 	background-position: center;
 	background-size: cover;
 	border-collapse: separate;
-	border-radius: 10px;
+	border-radius: 25px;
 	display: flex;
 	height: 111px;
 	align-items: center;
+	opacity: 88%;
 }
 
 .banner_title {
 	color: white;
 	font-size: 48px;
 	font-weight: 500;
-	padding: 16px;
 }
 
 .banner {
@@ -24,6 +24,20 @@
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Banner_2.png");
 }
 
+@media screen and (max-width: 376px) {
+	.banner {
+		margin: 0 20px 0 20px;
+	}
+	.banner_title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 577px) {
+	.banner {
+		height: 140px;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	.banner_title {
@@ -34,10 +48,11 @@
 	}
 }	
 
+
 @media screen and (min-width: 769px) {
 	.banner,
 	.banner_about {
-		height: 223px;
+		height: 170px;
 		justify-content: center;
 	}
 	.banner_title {
@@ -45,13 +60,10 @@
 	}	
 }
 
-@media screen and (max-width: 375px) {
-	.banner_title {
-        font-size: 24px;
-    }
-}
-
 @media screen and (min-width: 993px) {
+	.banner {
+		height: 223px;
+	}
 	.banner_title {
 	  font-size: 48px;
 	}
