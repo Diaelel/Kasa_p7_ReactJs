@@ -34,8 +34,21 @@
 @media screen and (min-width: 992px) {
     .error_title {
         font-size: 288px;
+		transform: translateY(-7px);
+		font-weight: 700;
+		width: 597px;
+		height: 263px;
 	}
 	.error_description {
 		font-size: 36px;
+		transform: translateY(56px);
+		width: 872px;
+		white-space: nowrap;
+	}
+	.error_btn {
+		font-size: 18px;
+		width: 284px;
+		height: 26px;
+		margin-top: 195pw;
 	}
 }
