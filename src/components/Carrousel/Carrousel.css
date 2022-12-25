@@ -1,4 +1,3 @@
-
 .container {
 	margin: 0 auto;
 	height: 415px;
@@ -47,7 +46,7 @@
 
 @media screen and (max-width: 376px) {
 	.container {
-		width: 335px;
+		width: 100%;;
 		height: 255px;
 	}
 	.chevron {
@@ -56,7 +55,7 @@
 		margin: 0 5.84px 0
 	}
 	.carrousel {
-		width: 335px;
+		width: 100%;
 	}
 	
 	.carrousel_legend {
@@ -67,8 +66,47 @@
 	}
 }
 
+@media screen and (min-width: 376px){
+	.container {
+		width: 100%;
+		height: 255px;
+	}
+	.chevron {
+		width: 20px;
+		height: 30px;
+		margin: 0 10px 0;
+	}
+	.carrousel {
+		width: 100%;
+	}
+	
+	.carrousel_img {
+		border-radius: 10px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.container {
+		height: 415px;
+	}
+	.chevron {
+		height: 50px;
+		width: 30px;
+		margin: 0 18px 0;
+	}
+	.carrousel_img {
+		height: 415px;
+	}
+}
+
 @media screen and (min-width: 992px){
 	.carrousel_img {
 		height: 415px;
+	}
+	.chevron {
+		cursor: pointer;
+		height: 79.2px;
+		width: 46.68px;
+		margin: 0 23.36px 0;
 	}
 }

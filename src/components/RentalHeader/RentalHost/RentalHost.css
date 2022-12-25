@@ -17,6 +17,15 @@
 	width: min-content;
 }
 
+@media screen and (min-width: 377px) {
+	.host_img {
+		border-radius: 50%;
+		height: 50px;
+		margin-left: 10px;
+		width: 50px;
+    }
+}
+
 @media screen and (min-width: 768px) {
 	.host {
 		max-width: none;
