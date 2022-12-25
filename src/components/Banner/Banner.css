@@ -34,12 +34,20 @@
         font-size: 24px;
 		margin-left: 16px;
     }
+	.banner_about {
+		width: 336px;
+		height: 223px;
+	}
 }
 
 @media screen and (min-width: 377px) {
 	.banner_title {
 		font-size: 26px;
 		margin-left: 16px;
+	}
+	.banner_about {
+		height: 223px;
+		margin: 0 20px 0 20px;
 	}
 }
 
@@ -56,8 +64,7 @@
 }
 
 @media screen and (min-width: 769px) {
-	.banner,
-	.banner_about {
+	.banner {
 		height: 170px;
 		justify-content: center;
 	}
@@ -67,8 +74,13 @@
 }
 
 @media screen and (min-width: 993px) {
-	.banner {
+	.banner,
+	.banner_about {
 		height: 223px;
+	}
+	.banner_about {
+		transform: translateY(-13.63px);
+		margin: 0 100px 0 100px;
 	}
 	.banner_title {
 	  font-size: 48px;
