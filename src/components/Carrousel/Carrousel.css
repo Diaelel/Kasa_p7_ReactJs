@@ -4,9 +4,11 @@
 	width: 1240px;
 	position: relative;
 }
+
 .carrousel {
 	position: relative;
 }
+
 .carrousel_navigation {
 	display: flex;
 	align-items: center;
@@ -16,6 +18,7 @@
     top: 0;
     width: 100%;
 }
+
 .carrousel_img {
     height: 225px;
     object-fit: cover;
@@ -23,6 +26,7 @@
     width: 100%;
 	border-radius: 25px;
 }
+
 .carrousel_legend {
     color: white;
     left: 0;

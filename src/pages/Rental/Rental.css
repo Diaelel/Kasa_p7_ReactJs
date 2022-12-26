@@ -1,20 +1,21 @@
-
 .rental_informations {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
- }
- .rental_host {
-  margin-top: -6px;
-  display: flex;
-  justify-content: space-around;
- }
- .rental_details {
-  gap: 76px;
-  margin-top: 24px;
- }
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
- @media screen and (max-width: 376px) {
+.rental_host {
+    margin-top: -6px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rental_details {
+    gap: 76px;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 376px) {
     .rental {
         margin: 0 20px;
         min-height: 95vh;
@@ -29,9 +30,9 @@
     .rental_details {
         margin-top: 16.5px;
     }
- }
+}
 
- @media screen and (min-width: 376px) {
+@media screen and (min-width: 376px) {
     .rental {
         margin: 0 20px;
         min-height: 95vh;
@@ -39,7 +40,7 @@
     .rental_host {
         justify-content: space-between;
     }
- }
+}
 
 @media screen and (min-width: 768px) {
     .rental {
@@ -57,9 +58,7 @@
         margin-top: 30px;
     }
     .rental_details {
-        display: flex;
-        flex-flow: row-reverse;
-        
+        display: flex;        
     }
 }
 
@@ -74,6 +73,3 @@
         margin: 0 100px 0 100px;
     }
 }
-
-
-

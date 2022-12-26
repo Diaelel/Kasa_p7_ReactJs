@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 .footer-container {
     bottom: 0;
     background: black;
@@ -25,8 +24,6 @@
     font-weight: 500;
     margin-top: 33px
 }
-
-
 
 @media screen and (max-width: 376px) {
     .text-footer {
@@ -53,7 +50,6 @@
         font-size: 18px;
     }
 }
-
 
 @media screen and (min-width: 1200px) {
     .text-footer {

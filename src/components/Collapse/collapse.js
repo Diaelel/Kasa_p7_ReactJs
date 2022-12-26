@@ -1,10 +1,3 @@
-// Mettre la description à gauche et "équipements" à droite
-// équipements sans 'points'
-//  modifier le padding
-
-
-
-
 import { Component } from "react";
 import Chevron from "./chevron.png";
 import "./Collapse.css";

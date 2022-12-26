@@ -1,5 +1,3 @@
-// Ajouter la police en CSS
-
 import "./Accueil.css";
 import { Component } from "react";
 import getData from "../../Utils/getData";

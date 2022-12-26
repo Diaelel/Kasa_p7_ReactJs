@@ -5,8 +5,6 @@ import Header from "../layouts/Header/Header"
 import Banner from "../components/Banner/Banner"
 import Footer from "../layouts/Footer/Footer"
 
-
-
 import Accueil from "../pages/Accueil/Accueil";
 import Rental from '../pages/Rental/Rental';
 import APropos from "../pages/A-propos/Apropos";

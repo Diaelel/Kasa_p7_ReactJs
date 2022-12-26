@@ -3,12 +3,14 @@
 	align-items: center;
 	max-width: 120px;
 }
+
 .host_img {
 	border-radius: 50%;
 	height: 32px;
 	margin-left: 10px;
 	width: 32px;
 }
+
 .host_name {
     font-size: 12px;
     font-weight: 500;

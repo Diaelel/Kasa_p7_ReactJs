@@ -30,7 +30,6 @@
 	text-decoration: underline;
 }
 
-
 @media screen and (min-width: 992px) {
     .error_title {
         font-size: 288px;

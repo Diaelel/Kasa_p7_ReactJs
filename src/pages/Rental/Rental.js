@@ -29,8 +29,8 @@ export default class Rental extends Component {
 					</div>
 				</div>
 				<div className="rental_details">
-					<Collapse title="Équipements" content={rental.equipments}></Collapse>
 					<Collapse title="Description" content={rental.description}></Collapse>
+					<Collapse title="Équipements" content={rental.equipments}></Collapse>
 				</div>
 			</div>
 		);

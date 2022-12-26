@@ -1,9 +1,8 @@
 .rental_section {
-		display: grid;
-		gap: 50px 60px;
-		margin-top: 43px;
+	display: grid;
+	gap: 50px 60px;
+	margin-top: 43px;
 }
-
 
 @media screen and (max-width: 376px) {
 	.rental_section {
@@ -25,6 +24,7 @@
 	.rental_section {
 		display: grid;
 		gap: 20px;
+		margin-bottom: 20px
 	}
 }
 
@@ -41,7 +41,6 @@
 	}
 }
 
-
 @media screen and (min-width: 992px) {
 	.rental_section {
         grid-template-columns: repeat(2, 1fr);
@@ -56,4 +55,3 @@
 		padding: 56px 50px 50px 50px;
 	}
 }
-

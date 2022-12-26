@@ -8,10 +8,11 @@
     }
 }
 
-
-    .apropos_values {
-        margin: 0 20px 0 20px;
-    }
+@media screen and (min-width: 377px) {
+	.apropos_values {
+		margin: 0px 20px 0px 20px;
+	}
+}
 
 @media screen and (min-width: 768px) {
     .apropos {

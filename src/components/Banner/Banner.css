@@ -7,10 +7,11 @@
 	display: flex;
 	height: 111px;
 	align-items: center;
-	opacity: 88%;
+	opacity: 100%;
 }
 
 .banner_title {
+	position: relative;
 	color: white;
 	font-size: 48px;
 	font-weight: 500;
@@ -18,11 +19,26 @@
 }
 
 .banner {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Banner_1.png");
+	position: relative;
+	background-image: url("./Banner_1.png");
+	overflow: hidden;
 }
 
 .banner_about {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Banner_2.png");
+	position: relative;
+	background-image: url("./Banner_2.png");
+	overflow: hidden;
+}
+
+.banner_about::before,
+.banner::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: #000;
+	opacity: 0.3;
+	mix-blend-mode: darken;
 }
 
 @media screen and (max-width: 376px) {

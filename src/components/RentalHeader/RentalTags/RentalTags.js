@@ -6,8 +6,8 @@ export default class RentalTags extends Component {
   return (
    <ul className='tags'>
     {this.props.tags.map((tag, index) => {
-						return <li className='tag' key={index}>{tag}</li>;
-					})}
+        return <li className='tag' key={index}>{tag}</li>;
+        })}
    </ul>
   )
  }
